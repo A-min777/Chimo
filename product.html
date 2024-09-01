@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/myheader.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    .product{
+        background-color: #2B1B41;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: var(--bs-breadcrumb-item-padding-x);
+    color: #FFF;
+    content: var(--bs-breadcrumb-divider, ">");
+}
+    .breadcrumb a{
+        text-decoration: none;
+        color: #FFF;
+    }
+</style>
+<body>
+    <div id="app">
+        <my-header></my-header>
+        <div class="product container-fluid ">
+            <nav aria-label="breadcrumb "  class="root ms-4 p-3">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                  <li class="breadcrumb-item"><a href="#">分類</a></li>
+                  <li class="breadcrumb-item active text-light" aria-current="page">課程名稱</li>
+                </ol>
+              </nav>
+            <div class="row ps-3 pb-5">
+                <div class="col-8 ms-4 p-3 ">
+                    <small class="text-light border-bottom">教師 | Mr.C</small>
+                    <p class=" fs-1 fw-bolder text-light">課程名稱</p>
+                    <div class="d-flex align-baseline">
+                        <p class=" fs-1 fw-bolder text-light">NT$1000</p>
+                        <button class="btn btn-warning fs-1 fw-bolder text-dark ms-3">立即購買</button>
+                    </div>
+                </div>
+                <div class="col-3 "><img src="images/video.jpg" alt="video" class="img-fluid rounded-4 border border-light border-2"></div>
+            </div> 
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/vue.global.js"></script>
+    <script src="js/myheader.js"></script>
+    <script>
+        const { createApp , ref } =Vue;
+        const config = {
+            srtup(){
+                return {};
+            },
+        }
+
+        const app =createApp();
+        app.component("my-header",myHeader);
+        app.mount("#app");
+    </script>
+</body>
+</html>

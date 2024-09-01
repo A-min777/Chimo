@@ -1,19 +1,26 @@
 .ad-banner {
-    align-content: center;
-    height: 60px;
-    letter-spacing: 0.2em;
-    background-color: #2B1B41;
-    color: white;
-  }
-#searchbar{
-    padding-left: 30px;
-    flex-grow: 1;
-    height: 50px;
+  align-content: center;
+  height: 60px;
+  letter-spacing: 0.2em;
+  background-color: #2b1b41;
+  color: white;
 }
-#searchbar button{
-    text-wrap: nowrap;;
+.navbar {
+  background-color: #fff;
+  align-items: baseline;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#searchbar {
+  padding-left: 30px;
+  flex-grow: 1;
+  height: 50px;
+}
+#searchbar button {
+  text-wrap: nowrap;
 }
 
 .navbar ul {
-    list-style: none;
-  }
+  list-style: none;
+}
