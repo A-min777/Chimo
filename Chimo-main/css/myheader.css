@@ -1,0 +1,46 @@
+.ad-banner {
+  align-content: center;
+  height: 60px;
+  letter-spacing: 0.2em;
+  background-color: #2b1b41;
+  color: white;
+}
+.navbarA {
+  background-color: #fff;
+  align-items: baseline;
+  justify-content: space-between;
+  display: flex;
+  top: 0;
+  z-index: 1000;
+}
+.navLeft {
+  flex-grow: 1;
+}
+#searchbar {
+  padding-left: 30px;
+  height: 50px;
+  min-width: 400px;
+}
+#searchbar button {
+  text-wrap: nowrap;
+}
+.headerLogin {
+  text-wrap: nowrap;
+}
+.headerLogin:hover {
+  background-color: #5b468b;
+  color: #fff;
+}
+
+.navbarA ul {
+  list-style: none;
+  align-items: baseline;
+}
+
+.navbarA .dropdown img {
+  max-width: 60px;
+}
+
+.navbarA .dropdown li:hover {
+  background-color: #5b468b;
+}
